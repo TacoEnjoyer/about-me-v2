@@ -1,0 +1,59 @@
+<nav class="navbar fixed w-full top-0 z-50 backdrop-blur-md bg-slate-950/30">
+    <div class="navbar-container">
+        <a href="/" class="navbar-logo">
+            <img id="navbar-logo" alt="Logo" style="height: 3rem;">
+        </a>
+        <ul class="navbar-menu">
+            <li class="navbar-item"><a href="/" class="navbar-link">home</a></li>
+            <li class="navbar-item"><a href="/project" class="navbar-link">project</a></li>
+        </ul>
+    </div>
+</nav>
+
+<script>
+    const logoImages = [
+        '/src/components/touhou-cirno.gif',
+        '/src/components/touhou-cirno-triangle.gif'
+    ];
+    const randomIndex = Math.floor(Math.random() * 2);
+    const navbarLogo = document.getElementById('navbar-logo') as HTMLImageElement;
+    if (navbarLogo) {
+        navbarLogo.src = logoImages[randomIndex];
+    }
+</script>
+
+<style>
+    .navbar {
+        padding: 0.4rem;
+        font-family: sans-serif;
+    }
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar-logo {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+    .navbar-menu {
+        list-style: none;
+        display: flex;
+        gap: 1.5rem;
+        padding-right: 1rem;
+        padding-left: 1.5rem;
+        font-size: 1rem;
+    }
+    .navbar-item {
+        font-family: sans-serif;
+    }
+    .navbar-link {
+        color: #fff;
+        text-decoration: none;
+        transition: opacity 0.2s ease;
+    }
+    .navbar-link:hover {
+        opacity: 0.8;
+    }
+</style>
