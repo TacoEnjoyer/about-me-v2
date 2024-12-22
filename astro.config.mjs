@@ -9,5 +9,13 @@ import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [solidJs(), tailwind(), react()]
+  integrations: [solidJs(), tailwind(), react()],
+  build: {
+    assets: '_assets'
+  },
+  vite: {
+    build: {
+      assetsDir: '_assets',
+    }
+  }
 });

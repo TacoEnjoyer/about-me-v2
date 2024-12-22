@@ -1,5 +1,6 @@
 ---
 const { title, description } = Astro.props;
+import '../styles/global.css'
 ---
 
 <!DOCTYPE html>
@@ -9,8 +10,7 @@ const { title, description } = Astro.props;
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{title}</title>
         <meta name="description" content={description} />
-        <link rel="icon" type="image/x-gif" href="/src/components/touhou-cirno.gif">
-        <link rel="stylesheet" href="/src/styles/global.css">
+        <link rel="icon" type="image/x-icon" href="/images/9.png">
     </head>
     <body class="animated-gradient min-h-screen">
         <header>
