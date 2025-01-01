@@ -20,6 +20,7 @@
     "primeicons": "^7.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "shiki": "^1.24.4",
     "solid-js": "^1.9.3",
     "tailwindcss": "^3.4.17"
   }
